@@ -28,6 +28,7 @@
   - É possível medir precisamente a a diferença de de uma posição da sequência para a seguinte.
   Exemplo:
     - Graus Célsius: 0°,...25°,26°,... a diferença entre 25° e 26° é precisamente 1° grau.
+    - Não existe ausência de valor
 
 ## Dado Racional
   - A principal diferença em comparaçao ao Dado Intervalar é, que pode haver a ausência de valor.
