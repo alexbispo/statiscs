@@ -41,8 +41,8 @@
   - Gráfico de eixo:
     - ![alt histograma](exemplo-histograma.jpeg)
     - Eixos:
-      - X: O valor da variável sendo exibida, neste caso quantidade de alunos.
-      - Y: A frequência, neste caso a quantidade de aulas assistidas.
+      - X: (Horizontal) Os intervalos, o valor da variável sendo exibida (aulas, dinheiro, altura, etc) neste caso quantidade de aulas.
+      - Y: (Vertical) A frequência (a quantidade de vezes que aquele item aparece na distribuição), neste caso a quantidade de alunos.
 
 # Curva Normal
   - Esperado em uma distribuição comum ou distribuição normal.
