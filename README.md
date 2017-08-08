@@ -72,7 +72,7 @@
   - Com os dados previamente ordenados, podemos identificar as chamadas "sujeiras", geralmente
   no início e final da distribuição (os extremos).
 
-# Amplitude
+## Amplitude
   - Amplitude baixa, pode indicar que os valores dentro de uma distribuição são pŕoximos um do 
   outro e consequentemente próximos da média.
   - Amplitude alta, pode indicar que os valores dentro de uma distribuição são distantes um do outro.
@@ -98,5 +98,6 @@ print(clean_dist)
 ```
 ## Boxplot
   - Pode ser criado a partir da Divisão por Quartis.
-  - Eixo vertical: Menor valor, valor que divide o 1° Quartil, valor que divide o 3° Quartil, e o maior valor.
+  - Eixo vertical: Menor valor, valor que divide o 1° Quartil, valor que divide o 3° Quartil, e o maior valor.  
+  ![alt histograma](boxplot_sample_02.png)
 
