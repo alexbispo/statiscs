@@ -67,3 +67,36 @@
   - É o valor que mais se repete em uma distribuição ou conjunto de dados.
   - Menos sencível a pontos outliers (valores extremamente altos ou baixos.
   - Indicada para quando os dados estão bastante dispersos, e existem outliers na distribuição.
+
+# Limpeza dos dados
+  - Com os dados previamente ordenados, podemos identificar as chamadas "sujeiras", geralmente
+  no início e final da distribuição (os extremos).
+
+# Amplitude
+  - Amplitude baixa, pode indicar que os valores dentro de uma distribuição são pŕoximos um do 
+  outro e consequentemente próximos da média.
+  - Amplitude alta, pode indicar que os valores dentro de uma distribuição são distantes um do outro.
+  - É sensível a outliers (valores extremamente altos ou baixos).
+  - Calculo:
+``` Python
+dist = [3, 3, 6, 7, 7, 10, 10, 10, 11, 13, 30]
+ampl = max(dist) - min(dist)
+print(ampl)
+```
+## Divisão por Quartis / Análise por Quartil:
+  - Consiste na divisão dos dados em 3 partes, 1° Quartil (os primeiros 25% dos dados), 2° Quartil
+  (50% dos dados) e 3° Quartil (os ultimos 25% dos dados).
+  - Calculo:
+``` Python
+import math
+dist = [3, 3, 6, 7, 7, 10, 10, 10, 11, 13, 30]
+n = len(dist)
+first_quartil_limit = math.ceil(n / 4)
+third_quartil_limit = math.ceil(((n /4) * n) / 4)
+clean_dist = dist[(first_quartil_limit - 1):(third_quartil_limit + 1)]
+print(clean_dist)
+```
+## Boxplot
+  - Pode ser criado a partir da Divisão por Quartis.
+  - Eixo vertical: Menor valor, valor que divide o 1° Quartil, valor que divide o 3° Quartil, e o maior valor.
+
